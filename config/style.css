@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #53b7df;
+    --secondary-color: #53b7df;
+    --withe-color: #ffffff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: var(--withe-color);
+    text-align: center;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    color: rgb(101, 170, 222);
+    text-decoration: none;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: var(--withe-color);
+}
+
+@media (max-width: 600px) {
+    .body-text {
+        width: 90%; /* 在小屏幕上设置为100%的宽度 */
+        padding: 10px; /* 可选：减少内边距以适应小屏幕 */
+    }
+}
+
+.body-text {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%; /* 设置宽度为屏幕的60% */
+    margin: 0 auto; /* 居中对齐 */
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+.code {
+    background: #5c5c5c; /* 深色背景 */
+    color: rgb(255, 255, 255); /* 字体颜色 */
+    font-family: Consolas; /* 代码字体 */
+    text-align: left; /* 左对齐 */
+    padding: 3px; /* 内边距 */
+    border-radius: 5px; /* 圆角边框 */
+    font-size: calc(1em - 4px); /* 设置字体大小为比正常小 2px */
+}

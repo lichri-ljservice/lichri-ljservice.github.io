@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LJ SERVICE</title>
+    <link rel="icon" href="config/ljservice.png" type="image/png">
+    <link rel="stylesheet" href="config/style.css">
+    <script src="config/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- <nav>
+            <ul class="navbar">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+            </ul>
+        </nav> -->
+
+        <h1>欢迎来到 LJ SERVICE 官网！</h1>
+    </header>
+    
+    <div class="body-text">
+
+        <h2>家庭成员信息</h2>
+        <div class="input-group">
+            <label for="year">ISEE 年份:</label>
+            <select id="year" onchange="updateResult()">
+                <script>
+                    let currentYear = new Date().getFullYear();
+                    for (let i = currentYear + 3; i >= currentYear - 3; i--) {
+                        document.write(`<option value="${i}" ${i === currentYear ? 'selected' : ''}>${i}</option>`);
+                    }
+                </script>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="options">住家情况 Residenza:</label>
+            <select id="casa" onchange="updateResult()">
+                <option value="---">---</option>
+                <option value="locazione">租的房子</option>
+                <option value="proprietario">买的房子</option>
+                <option value="mutuo">买的房子 + 房贷</option>
+                <option value="altro">其他</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <input type="checkbox" id="autoveicolo" onchange="updateResult()"> 有车
+        </div>
+        <div class="input-group">
+            <input type="checkbox" id="attività" onchange="updateResult()"> 开店
+        </div>
+        <div class="input-group">
+            <input type="checkbox" id="disabile" onchange="updateResult()"> 有残疾证明 Disabilità
+        </div>
+        <div class="input-group">
+            <input type="checkbox" id="assicutazione_vita" onchange="updateResult()"> 有人寿保险 Assicurazione di Vita
+        </div>
+        <div class="input-group">
+            <input type="checkbox" id="titoli" onchange="updateResult()"> 有买定期存款或债券 Titoli
+        </div>
+
+        <h2>材料列表</h2>
+        <div class="code" id="result"></div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 LJ SERVICE 版权所有</p>
+    </footer>
+</body>
+
+</html>
