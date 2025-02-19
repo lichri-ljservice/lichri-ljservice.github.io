@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LJ SERVICE</title>
-    <link rel="icon" href="config/ljservice.png" type="image/png">
-    <link rel="stylesheet" href="config/style.css">
-    <script src="config/script.js"></script>
+    <link rel="icon" href="ljservice.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -20,14 +20,23 @@
             </ul>
         </nav> -->
 
-        <h1>查询 ISEE 所需材料</h1>
+        <div class="language-selector">
+            <label for="language">Lingua: </label>
+            <select id="language">
+                <option value="zh">中文</option>
+                <option value="it">Italiano</option>
+            </select>
+        </div>             
+
+        <h1 id="h1_calcola_materiale"></h1>
     </header>
     
     <div class="body-text">
 
-        <h2>家庭成员信息</h2>
+        <!-- 家庭成员信息 -->
+        <h2 id="h2_info_stato_famiglia"></h2>
         <div class="input-group">
-            <label for="year">ISEE 年份:</label>
+            <label for="year" id="label_isee_anno"></label>
             <select id="year" onchange="updateResult()">
                 <script>
                     let currentYear = new Date().getFullYear();
@@ -38,54 +47,54 @@
             </select>
         </div>
         <div class="input-group">
-            <label for="options">住家情况 Residenza:</label>
-            <select id="casa" onchange="updateResult()">
+            <label for="options" id="label_info_residenza"></label>
+            <select id="residenza" onchange="updateResult()">
                 <option value="---">---</option>
-                <option value="locazione">租的房子</option>
-                <option value="proprietario">买的房子</option>
-                <option value="mutuo">买的房子 + 房贷</option>
-                <option value="altro">其他</option>
+                <option value="residenza_locato" id="option_residenza_locato"></option>
+                <option value="residenza_acquistato" id="option_residenza_acquistato"></option>
+                <option value="residenza_acquistato_mutuo" id="option_residenza_acquistato_mutuo"></option>
+                <option value="altro" id="option_altro"></option>
             </select>
         </div>
         <div class="input-group">
-            <label for="autoveicolo">
-                <input type="checkbox" id="autoveicolo" onchange="updateResult()">
-                有车
+            <label for="checkbox_autoveicolo">
+                <input type="checkbox" id="checkbox_autoveicolo" onchange="updateResult()">
+                <span id="label_ha_autoveicolo"></span>
             </label>
         </div>
         <div class="input-group">
-            <label for="attività">
-                <input type="checkbox" id="attività" onchange="updateResult()">
-                开店
+            <label for="checkbox_attività">
+                <input type="checkbox" id="checkbox_attività" onchange="updateResult()">
+                <span id="label_ha_attività"></span>
             </label>
         </div>
         <div class="input-group">
-            <label for="disabile">
-                <input type="checkbox" id="disabile" onchange="updateResult()">
-                有残疾证明 Disabilità
+            <label for="checkbox_disabile">
+                <input type="checkbox" id="checkbox_disabile" onchange="updateResult()">
+                <span id="label_ha_disabile"></span>
             </label>
         </div>
         <div class="input-group">
-            <label for="assicutazione_vita">
-                <input type="checkbox" id="assicutazione_vita" onchange="updateResult()">
-                有人寿保险 Assicurazione di Vita
+            <label for="checkbox_assicutazione_vita">
+                <input type="checkbox" id="checkbox_assicutazione_vita" onchange="updateResult()">
+                <span id="label_ha_assicurazione_vita"></span>
             </label>
         </div>
         <div class="input-group">
-            <label for="titoli">
-                <input type="checkbox" id="titoli" onchange="updateResult()">
-                有买定期存款或债券 Titoli
+            <label for="checkbox_titoli">
+                <input type="checkbox" id="checkbox_titoli" onchange="updateResult()">
+                <span id="label_ha_titoli"></span>
             </label>
         </div>
         
-
-        <h2>材料列表</h2>
+        <!-- 材料列表 -->
+        <h2 id="h2_lista_materiale"></h2>
         <div class="code" id="result"></div>
 
     </div>
 
     <footer>
-        <p>&copy; 2025 LJ SERVICE 版权所有</p>
+        <p id="p_copyright"></p>
     </footer>
 </body>
 

@@ -82,3 +82,14 @@ footer {
     border-radius: 5px; /* 圆角边框 */
     font-size: calc(1em - 4px); /* 设置字体大小为比正常小 2px */
 }
+
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000; /* 确保它在其他内容之上 */
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
