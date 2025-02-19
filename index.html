@@ -20,7 +20,7 @@
             </ul>
         </nav> -->
 
-        <h1>欢迎来到 LJ SERVICE 官网！</h1>
+        <h1>查询 ISEE 所需材料</h1>
     </header>
     
     <div class="body-text">
@@ -48,20 +48,36 @@
             </select>
         </div>
         <div class="input-group">
-            <input type="checkbox" id="autoveicolo" onchange="updateResult()"> 有车
+            <label for="autoveicolo">
+                <input type="checkbox" id="autoveicolo" onchange="updateResult()">
+                有车
+            </label>
         </div>
         <div class="input-group">
-            <input type="checkbox" id="attività" onchange="updateResult()"> 开店
+            <label for="attività">
+                <input type="checkbox" id="attività" onchange="updateResult()">
+                开店
+            </label>
         </div>
         <div class="input-group">
-            <input type="checkbox" id="disabile" onchange="updateResult()"> 有残疾证明 Disabilità
+            <label for="disabile">
+                <input type="checkbox" id="disabile" onchange="updateResult()">
+                有残疾证明 Disabilità
+            </label>
         </div>
         <div class="input-group">
-            <input type="checkbox" id="assicutazione_vita" onchange="updateResult()"> 有人寿保险 Assicurazione di Vita
+            <label for="assicutazione_vita">
+                <input type="checkbox" id="assicutazione_vita" onchange="updateResult()">
+                有人寿保险 Assicurazione di Vita
+            </label>
         </div>
         <div class="input-group">
-            <input type="checkbox" id="titoli" onchange="updateResult()"> 有买定期存款或债券 Titoli
+            <label for="titoli">
+                <input type="checkbox" id="titoli" onchange="updateResult()">
+                有买定期存款或债券 Titoli
+            </label>
         </div>
+        
 
         <h2>材料列表</h2>
         <div class="code" id="result"></div>
