@@ -37,7 +37,7 @@
         <h2 id="h2_info_stato_famiglia"></h2>
         <div class="input-group">
             <label for="year" id="label_isee_anno"></label>
-            <select id="year" onchange="updateResult()">
+            <select id="year" onchange="updateResult_isee()">
                 <script>
                     let currentYear = new Date().getFullYear();
                     for (let i = currentYear + 3; i >= currentYear - 3; i--) {
@@ -48,7 +48,7 @@
         </div>
         <div class="input-group">
             <label for="options" id="label_info_residenza"></label>
-            <select id="residenza" onchange="updateResult()">
+            <select id="residenza" onchange="updateResult_isee()">
                 <option value="---">---</option>
                 <option value="residenza_locato" id="option_residenza_locato"></option>
                 <option value="residenza_acquistato" id="option_residenza_acquistato"></option>
@@ -58,31 +58,31 @@
         </div>
         <div class="input-group">
             <label for="checkbox_autoveicolo">
-                <input type="checkbox" id="checkbox_autoveicolo" onchange="updateResult()">
+                <input type="checkbox" id="checkbox_autoveicolo" onchange="updateResult_isee()">
                 <span id="label_ha_autoveicolo"></span>
             </label>
         </div>
         <div class="input-group">
             <label for="checkbox_attività">
-                <input type="checkbox" id="checkbox_attività" onchange="updateResult()">
+                <input type="checkbox" id="checkbox_attività" onchange="updateResult_isee()">
                 <span id="label_ha_attività"></span>
             </label>
         </div>
         <div class="input-group">
             <label for="checkbox_disabile">
-                <input type="checkbox" id="checkbox_disabile" onchange="updateResult()">
+                <input type="checkbox" id="checkbox_disabile" onchange="updateResult_isee()">
                 <span id="label_ha_disabile"></span>
             </label>
         </div>
         <div class="input-group">
             <label for="checkbox_assicutazione_vita">
-                <input type="checkbox" id="checkbox_assicutazione_vita" onchange="updateResult()">
+                <input type="checkbox" id="checkbox_assicutazione_vita" onchange="updateResult_isee()">
                 <span id="label_ha_assicurazione_vita"></span>
             </label>
         </div>
         <div class="input-group">
             <label for="checkbox_titoli">
-                <input type="checkbox" id="checkbox_titoli" onchange="updateResult()">
+                <input type="checkbox" id="checkbox_titoli" onchange="updateResult_isee()">
                 <span id="label_ha_titoli"></span>
             </label>
         </div>

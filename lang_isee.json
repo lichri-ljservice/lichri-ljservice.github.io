@@ -7,13 +7,13 @@
         "label_info_residenza": "住家情况 Residenza: ",
         "option_residenza_locato": "租的房子",
         "option_residenza_acquistato": "买的房子",
-        "option_residenza_acquistato_mutuo": "买的房子 + 房贷",
+        "option_residenza_acquistato_mutuo": "买的房子 + 正在还房贷",
         "option_altro": "其他",
-        "label_ha_autoveicolo": "有车",
-        "label_ha_attività": "开店",
-        "label_ha_disabile": "有残疾证明 Disabilità",
-        "label_ha_assicurazione_vita": "有人寿保险 Assicurazione di Vita",
-        "label_ha_titoli": "有买定期存款或债券 Titoli",
+        "label_ha_autoveicolo": "家里有车",
+        "label_ha_attività": "家里开店",
+        "label_ha_disabile": "家里有残疾证明 Disabilità",
+        "label_ha_assicurazione_vita": "家里有人寿保险 Assicurazione di Vita",
+        "label_ha_titoli": "家里有买定期存款或债券 Titoli",
         "p_copyright": "© 2025 LJ SERVICE 版权所有",
         
         "output_materiale_base": "ISEE {selectedYear} 所需材料：<br><br>* 家庭成员证明 Stato di Famiglia<br><br>* 办理⼈⾝份证、绿卡<br><br>* 家庭成员绿卡号",
@@ -37,7 +37,7 @@
         "label_info_residenza": "Residenza: ",
         "option_residenza_locato": "Casa locata",
         "option_residenza_acquistato": "Casa Acquistata",
-        "option_residenza_acquistato_mutuo": "Casa Acquistata con Mutuo",
+        "option_residenza_acquistato_mutuo": "Casa Acquistata con Mutuo Residuo",
         "option_altro": "Altro",
         "label_ha_autoveicolo": "Avendo uno autoveicolo, motoveiloco o imbarcazione",
         "label_ha_attività": "Avendo un attività commerciale",
@@ -53,10 +53,10 @@
         "output_attività": "Nel caso di partita IVA, occorre fornire il valore del patrimonio netto di imprese individuali e di società al 31/12/{2_years_ago} per la quota di spettanza (fornire apposito modulo compilato dal commercialista)",
         "output_patrimonio_mobiliare": "PATRIMONIO MOBILIARE (l'anno di riferimento è {2_years_ago})",
         "output_giacenza_media": "Saldo e giacenza media alla data del 31/12/{2_years_ago} (anche se a zero), su carta intestata, relativi a Depositi, CIC bancari e postali, libretti, carte prepagate con e senza IBAN",
-        "output_assicutazione_vita": "⼈寿保险保单 Assicurazioni sulla Vita e di Capitalizzazione al 31/12/{2_years_ago}",
+        "output_assicutazione_vita": "somma dei premi complessivamente versati dalla data di stipula fino al 31/12/{2_years_ago} per assicurazioni sulla vita e di capitalizzazione per i quali è esercitabile il diritto di riscatto al 31/12/{2_years_ago}",
         "output_titoli": "Titoli di stato, obbligazioni e certificati di Deposito, buoni Fruttiferi (per i quali va assunto un valore nominale)",
         "output_patrimonio_immobiliare": "PATRIMONIO IMMOBILIARE (l'anno di riferimento è {2_years_ago})",
-        "output_dati_catastali": "房产证信息，房屋买卖协议 Dati Catastali",
-        "output_quota_capitale_residua": "房屋贷款剩余本⾦证明 Certificazione Quota Capitale Residua del Mutuo al 31/12/{2_years_ago}"
+        "output_dati_catastali": "Visure Catastali degli immobili posseduti in Italia alla data del 31/12/{2_years_ago}, valore commerciale di eventuali terreni edificabili. Per gli immobili posseduti all'estero e necessario fornire copia dell'IVIE pagata nel {2_years_ago}",
+        "output_quota_capitale_residua": "Certificazione quota capitale residua del mutuo alla data del 31/12/{2_years_ago}"
     }
 }

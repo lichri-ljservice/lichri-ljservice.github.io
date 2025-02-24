@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function updateContent(lang) {
-        fetch('language.json')
+        fetch('lang_isee.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('网络响应错误');
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     }
                 }
-                updateResult(); // 刷新其他依赖语言数据的函数
+                updateResult_isee(); // 刷新其他依赖语言数据的函数
             })
             .catch(error => {
                 console.error('获取数据时出错:', error);
@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-function updateResult() {
+function updateResult_isee() {
     const selectedLanguage = localStorage.getItem('language') || 'zh'; // 从localStorage获取当前语言
-    fetch('language.json')
+    fetch('lang_isee.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('网络响应错误');
